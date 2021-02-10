@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+li {
+  font-family: Arial;
+}
+
+#ingredients li { 
+  font-family: Arial;
+}
+
+h1 {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 60px;
+  color: #c74a10;
+  text-shadow: 2px 2px 4px #000000;
+  letter-spacing: 3px;
+  
+}
+
+h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+p {
+  font-family: Arial;
+  color: pink;
+}
+
+#grill {
+  color: red;
+}
+
+.recipe {
+  color: orange;
+  text-shadow: 0px 0px 8px yellow;
+}
