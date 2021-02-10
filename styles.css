@@ -1,39 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
+img#steakpic {
+  width: 70%;
+  height: auto;
+  padding: 10px;
+  float: left;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  width: 100vw;
+  display: inline-block;
+  float: left;
+  background-color: beige;
+  padding: 1vw;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+#equipment {
+  background-color: honeydew;
+}
+
+#directions {
+  background-color: lavender;
+}
+
 li {
   font-family: Arial;
 }
 
-#ingredients li { 
-  font-family: Arial;
-}
-
 h1 {
-  font-family: 'Bowlby One SC', cursive;
+  font-family: "Bowlby One SC", cursive;
   font-size: 60px;
   color: #c74a10;
   text-shadow: 2px 2px 4px #000000;
-  letter-spacing: 3px;
-  
+  letter-spacing: 2px;
 }
 
 h4 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   text-decoration: underline;
 }
 
 p {
   font-family: Arial;
-  color: pink;
 }
 
-#grill {
-  color: red;
-}
-
-.recipe {
-  color: orange;
+.links {
+  color: black;
   text-shadow: 0px 0px 8px yellow;
+  float: left;
+}
+
+.description {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+@media (orientation: landscape) {
+  
+  div {
+    width: calc(100vw/3 - 2vw);
+  }
+  
 }

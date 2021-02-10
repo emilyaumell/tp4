@@ -12,47 +12,83 @@
 	<link rel="stylesheet" href="styles.css" media="all">
 	<style>
 
-    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+img#steakpic {
+  width: 70%;
+  height: auto;
+  padding: 10px;
+  float: left;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  width: 100vw;
+  display: inline-block;
+  float: left;
+  background-color: beige;
+  padding: 1vw;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+#equipment {
+  background-color: honeydew;
+}
+
+#directions {
+  background-color: lavender;
+}
 
 li {
   font-family: Arial;
 }
 
-#ingredients li { 
-  font-family: Arial;
-}
-
-#equipment li:nth-child(3) {
-  
-}
-
 h1 {
-  font-family: 'Bowlby One SC', cursive;
+  font-family: "Bowlby One SC", cursive;
   font-size: 60px;
   color: #c74a10;
-   
+  text-shadow: 2px 2px 4px #000000;
+  letter-spacing: 2px;
 }
 
 h4 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   text-decoration: underline;
 }
 
-#highlight {
-  background-color: yellow;
-}
-
 p {
   font-family: Arial;
-  color: pink;
 }
 
-.recipe {
-  color: orange;
+.links {
+  color: black;
   text-shadow: 0px 0px 8px yellow;
-}    
+  float: left;
+}
+
+.description {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  margin-bottom: 40px;
+}   
+    
+/* from the demo on responsive design */ 
+    
+@media (orientation: landscape) {
+  
+  div {
+    width: calc(100vw/3 - 2vw);
+  }
+  
+}   
     
 	</style>
 
@@ -66,6 +102,10 @@ p {
 <body>
 
 <h1>Sirloin Steak with Garlic Butter</h1>
+  
+<p class="description">I have never tasted any other steak that came even close to the ones made with this recipe. If you are having steak, don't skimp on flavor to save a few calories. The butter makes this steak melt in your mouth wonderful.</p>
+
+<img id="steakpic" src="https://images.unsplash.com/photo-1579366948929-444eb79881eb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80">
 
 <div id="ingredients">
   <h4>Ingredients</h4>
@@ -75,18 +115,18 @@ p {
     <li>4 cloves garlic, minced</li>
     <li><mark>4 pounds beef top sirloin steaks</mark></li>
     <li>salt and pepper to taste</li>
-  </ul>
+  <ul/>
 </div>
 
 <div id="equipment">
   <h4>Kitchen Equipment</h4>
   <ul>
-    <li id="grill">Outdoor grill</li>
+    <li>Outdoor grill</li>
     <li>Stovetop</li>
     <li>Small saucepan</li>
     <li>Measuring teaspoons</li>
     <li>Knife</li>
-  </ul>
+  <ul/>
 </div>
 
 <div id="directions">
@@ -99,7 +139,7 @@ p {
   </ol>
 </div>
 
-<p class="recipe">(Original recipe at <a href="https://www.allrecipes.com/recipe/14554/sirloin-steak-with-garlic-butter/?internalSource=hub%20recipe&referringContentType=Search">AllRecipes.com</a>.)</p>
+<p class="links">(Original recipe at <a href="https://www.allrecipes.com/recipe/14554/sirloin-steak-with-garlic-butter/?internalSource=hub%20recipe&referringContentType=Search">AllRecipes.com</a> | Photo Sourced from <a href="https://unsplash.com/photos/c3mFafsFz2w">Unsplash.com</a>.)</p>
 
 </body>
 </html>
